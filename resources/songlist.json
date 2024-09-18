@@ -1,0 +1,66 @@
+[
+    {
+        "songName": "Welcome To New York (Taylor's Version)",
+        "songAlbum": "1989 (Taylor's Version) [Deluxe]",
+        "songArtist": "Taylor Swift",
+        "address": "/resources/songs/Welcome to New York.mp3",
+        "albumCover": "/resources/albumCovers/1989-Taylors-Version.jpg",
+        "id": 0
+    },
+    {
+        "songName": "Blank Space (Taylor's Version)",
+        "songAlbum": "1989 (Taylor's Version) [Deluxe]",
+        "songArtist": "Taylor Swift",
+        "address": "/resources/songs/Blank Space.mp3",
+        "albumCover": "/resources/albumCovers/1989-Taylors-Version.jpg",
+        "id": 1
+    },
+    {
+        "songName": "Style (Taylor's Version)",
+        "songAlbum": "1989 (Taylor's Version) [Deluxe]",
+        "songArtist": "Taylor Swift",
+        "address": "/resources/songs/Style.mp3",
+        "albumCover": "/resources/albumCovers/1989-Taylors-Version.jpg",
+        "id": 2
+    },
+    {
+        "songName": "Diet Mountain Dew",
+        "songAlbum": "Born to Die",
+        "songArtist": "Lana Del Rey",
+        "address": "/resources/songs/DietMountainDew.mp3",
+        "albumCover": "/resources/albumCovers/BornToDie.jpg",
+        "id": 3
+    }, 
+    {
+        "songName": "Summertime Sadness",
+        "songAlbum": "Born to Die",
+        "songArtist": "Lana Del Rey",
+        "address": "/resources/songs/SummertimeSadness.mp3",
+        "albumCover": "/resources/albumCovers/BornToDie.jpg",
+        "id": 4
+    },
+    {
+        "songName": "Sunflower",
+        "songAlbum": "Spider-Man: Into the Spider-Verse",
+        "songArtist": "Post Malone & Swae Lee",
+        "address": "/resources/songs/Sunflower.mp3",
+        "albumCover": "/resources/albumCovers/SpiderMan-IntoTheSpiderVerse.jpg",
+        "id": 5
+    },
+    {
+        "songName": "Life is a Highway",
+        "songAlbum": "Cars",
+        "songArtist": "Rascal Flatts",
+        "address": "/resources/songs/LifeIsAHighway.mp3",
+        "albumCover": "/resources/albumCovers/MeAndMyGang.jpg",
+        "id": 6
+    },
+    {
+        "songName": "Shoot to Thrill",
+        "songAlbum": "Back in Black",
+        "songArtist": "AC/DC",
+        "address": "/resources/songs/ShootToThrill.mp3",
+        "albumCover": "/resources/albumCovers/BackInBlack.jpg",
+        "id": 7
+        }
+]

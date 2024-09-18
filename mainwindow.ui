@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="mainStackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>550</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="quickPlay">
+     <widget class="QPushButton" name="changeQPtoLibButton">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>410</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Library &gt;</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="quickPlayNowPlayingFrame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>800</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSlider" name="volumeSliderQP">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>40</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="songPositionSliderQP">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>40</y>
+         <width>491</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="albumCoverLabelQP">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>91</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>album cover</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="changeQPToNPButtonQP">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>60</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>^</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="playPauseButtonQP">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏵</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lastTrackButtonQP">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏮</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="skipTrackButtonQP">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏭</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songNameLabelQP">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>60</y>
+         <width>401</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Song name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="artistNameLabelQP">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>80</y>
+         <width>401</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Artist</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songTimePosLabelQP">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>21</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0:00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songTimeLenLabelQP">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>20</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0:00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="nowPlayingLineQP">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>801</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="currentTimeQP">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>10</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Time</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="quickPlaylist1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>191</width>
+        <height>311</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="quickPlaylist2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>50</y>
+        <width>191</width>
+        <height>311</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="quickPlaylist3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>50</y>
+        <width>191</width>
+        <height>311</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="quickPlaylist1Label">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>370</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="quickPlaylist2Label">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>370</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="quickPlaylist3Label">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>370</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="libraryPage">
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>800</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QSlider" name="volumeSliderLib">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>40</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QSlider" name="songPositionSliderLib">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>40</y>
+         <width>491</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="albumCoverLabelLib">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>91</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>album cover</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="changeLibToNPButton">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>60</y>
+         <width>61</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>^</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="playPauseButtonLib">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏵</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lastTrackButtonLib">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏮</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="skipTrackButtonLib">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>10</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>⏭</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songNameLabelLib">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>60</y>
+         <width>401</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Song name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="artistNameLabelLib">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>80</y>
+         <width>401</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Artist</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songTimePosLabelLib">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>21</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0:00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="songTimeLenLabelLib">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>20</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>0:00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="nowPlayingLineLib">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>801</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="activePlaylistLabelLib">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="changeLibToQPButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt; Quick Play</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="currentTimeLib">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>10</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Time</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="librarySearchBarLib">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>241</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhLatinOnly</set>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Search Library</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="librarySearchListLib">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>241</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="activePlaylistList">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>70</y>
+        <width>241</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addPlaylistButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>420</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Playlist</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addSongButton">
+      <property name="geometry">
+       <rect>
+        <x>419</x>
+        <y>420</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Song</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removeSongButton">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>420</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove Song</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removePlaylistButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>420</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove Playlist</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="queueListLib">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>230</y>
+        <width>241</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>210</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Up next:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="nowPlayingPage">
+     <widget class="QPushButton" name="changeNPToLibButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>520</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Library</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="albumCoverLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>341</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Album Cover</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="songNameLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>360</y>
+        <width>551</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Song title</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="artistnameLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>400</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Artist name</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="songPositionSliderNP">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>470</y>
+        <width>651</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lastTrackButtonNP">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>500</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>⏮</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="playPauseButtonNP">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>490</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>⏵</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="skipTrackButtonNP">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>500</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>⏭</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="volumeSliderNP">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>510</y>
+        <width>160</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sliderPosition">
+       <number>50</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="albumNameLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>430</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Album name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="songTimePosLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>480</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>0:00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="songTimeLenLabelNP">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>480</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>0:00</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="changeNPToQpButton">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>520</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Quick Play</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
